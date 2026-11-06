@@ -70,9 +70,9 @@ export const TemplateHeader: React.FC<TemplateHeaderProps> = ({
           {/* Right Action Icons: Notification Bell & Quick Call (Matches screenshot) */}
           <div className="flex items-center gap-2">
             <a
-              href="tel:+919876543210"
+              href="tel:+910000000000"
               className="w-9 h-9 rounded-full bg-slate-50 hover:bg-slate-100 border border-slate-200/80 text-slate-700 flex items-center justify-center transition-colors cursor-pointer"
-              title="Call Instructor: +91 98765 43210"
+              title="Call Instructor: +91 00000 00000"
             >
               <Phone className="w-4 h-4 text-emerald-600" />
             </a>

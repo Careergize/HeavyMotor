@@ -25,8 +25,8 @@ export const TemplateCategoryGrid: React.FC<TemplateCategoryGridProps> = ({
     { id: 'car-lmv', label: 'Car / LMV', sub: 'Manual & Auto', icon: Car },
     { id: 'bike-autorickshaw', label: 'Two-Wheeler', sub: '8 Track & 3W', icon: Bike },
     { id: 'trailer-articulated', label: 'Articulated Rig', sub: '40ft Container', icon: Boxes },
-    { id: 'all', label: 'MVD Badge', sub: 'PSV Commercial', icon: Award },
-    { id: 'all', label: 'All Packages', sub: '18 Total Plans', icon: LayoutGrid },
+    { id: 'mvd-badge', label: 'MVD Badge', sub: 'PSV Commercial', icon: Award },
+    { id: 'all', label: 'All Packages', sub: '21 Total Plans', icon: LayoutGrid },
   ];
 
   return (
@@ -50,35 +50,34 @@ export const TemplateCategoryGrid: React.FC<TemplateCategoryGridProps> = ({
       </div>
 
       {/* 4x2 Grid of Rounded Square Cards matching screenshot */}
-      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-8 gap-2.5 sm:gap-3">
+      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-8 gap-2 sm:gap-3">
         {categories.map((cat, idx) => {
           const Icon = cat.icon;
-          const isActive = selectedCategory === cat.id && (cat.label !== 'All Packages' || selectedCategory === 'all');
+          const isActive = selectedCategory === cat.id;
 
           return (
             <button
               key={idx}
               onClick={() => onSelectCategory(cat.id)}
-              className={`group flex flex-col items-center justify-center p-2.5 sm:p-3 rounded-2xl text-center transition-all duration-300 cursor-pointer hover:-translate-y-1.5 hover:shadow-lg active:scale-95 ${
+              className={`group flex flex-col items-center justify-center py-2 sm:py-3 px-1 sm:px-3 rounded-2xl text-center transition-all duration-300 cursor-pointer hover:-translate-y-1.5 hover:shadow-lg active:scale-95 min-h-[92px] sm:min-h-[88px] ${
                 isActive
                   ? 'bg-slate-900 text-white border-2 border-amber-500 shadow-md ring-2 ring-amber-500/20'
                   : 'bg-white text-slate-700 border border-slate-200 hover:border-slate-300 hover:bg-slate-50 shadow-xs'
               }`}
-              style={{ minHeight: '88px' }}
             >
               {/* Icon container */}
               <div
-                className={`w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center mb-1.5 transition-all duration-300 group-hover:scale-110 ${
+                className={`w-9 h-9 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center mb-1 sm:mb-1.5 transition-all duration-300 group-hover:scale-110 shrink-0 ${
                   isActive
                     ? 'bg-slate-800 text-amber-400 shadow-xs border border-amber-500/30'
                     : 'bg-slate-100 text-slate-700 group-hover:bg-amber-50 group-hover:text-amber-600'
                 }`}
               >
-                <Icon className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={2.2} />
+                <Icon className="w-4 h-4 sm:w-6 sm:h-6" strokeWidth={2.2} />
               </div>
 
               <span
-                className={`text-[11px] sm:text-xs font-bold leading-tight line-clamp-1 ${
+                className={`text-[10px] sm:text-xs font-bold leading-tight line-clamp-2 sm:line-clamp-1 break-words text-center w-full px-0.5 ${
                   isActive ? 'text-amber-400 font-extrabold' : 'text-slate-800'
                 }`}
               >

@@ -50,7 +50,7 @@ export const TemplateBottomNav: React.FC<TemplateBottomNavProps> = ({
 
         {/* Support / Helpdesk */}
         <a
-          href="tel:+919876543210"
+          href="tel:+910000000000"
           className="flex flex-col sm:flex-row items-center gap-1 px-3 py-1.5 rounded-full text-slate-500 hover:text-amber-600 transition-all cursor-pointer"
         >
           <Headphones className="w-4 h-4" />

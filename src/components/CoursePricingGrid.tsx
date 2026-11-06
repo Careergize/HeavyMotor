@@ -20,7 +20,7 @@ export const CoursePricingGrid: React.FC<CoursePricingGridProps> = ({
     const text = encodeURIComponent(
       `Hello Hans Driving School, I am interested in the ${currentCategory.name} - ${pkg.title} (${pkg.duration}) priced at ₹${pkg.price}. Please provide batch timings and admission details.`
     );
-    return `https://wa.me/919876543210?text=${text}`;
+    return `https://wa.me/910000000000?text=${text}`;
   };
 
   return (
@@ -216,10 +216,10 @@ export const CoursePricingGrid: React.FC<CoursePricingGridProps> = ({
               Consult Chief Instructor
             </button>
             <a
-              href="tel:+919876543210"
+              href="tel:+910000000000"
               className="w-full sm:w-auto px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-bold text-sm transition-all text-center"
             >
-              Call +91 98765 43210
+              Call +91 00000 00000
             </a>
           </div>
         </div>

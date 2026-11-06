@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, Clock, ArrowRight, MessageCircle, Truck } from 'lucide-react';
+import { Check, Clock, ArrowRight, MessageCircle, Truck, Bus, HardHat, Car, Bike, Boxes, Award } from 'lucide-react';
 import { COURSE_PACKAGES, VEHICLE_CATEGORIES } from '../data/mockData';
 import type { VehicleCategoryId, CoursePackage } from '../types';
 
@@ -7,6 +7,18 @@ interface TemplateCourseDetailsProps {
   selectedCategory: VehicleCategoryId | 'all';
   onOpenBooking: (courseName?: string, tierName?: string) => void;
 }
+
+const renderCategoryIcon = (iconName: string, className: string) => {
+  switch (iconName) {
+    case 'Bus': return <Bus className={className} />;
+    case 'HardHat': return <HardHat className={className} />;
+    case 'Car': return <Car className={className} />;
+    case 'Bike': return <Bike className={className} />;
+    case 'Boxes': return <Boxes className={className} />;
+    case 'Award': return <Award className={className} />;
+    default: return <Truck className={className} />;
+  }
+};
 
 export const TemplateCourseDetails: React.FC<TemplateCourseDetailsProps> = ({
   selectedCategory,
@@ -20,7 +32,7 @@ export const TemplateCourseDetails: React.FC<TemplateCourseDetailsProps> = ({
     const text = encodeURIComponent(
       `Hello Hans Driving School, I am interested in the ${currentCategory.name} - ${pkg.title} (${pkg.duration}) priced at ₹${pkg.price}. Please provide batch timings and admission details.`
     );
-    return `https://wa.me/919876543210?text=${text}`;
+    return `https://wa.me/910000000000?text=${text}`;
   };
 
   return (
@@ -30,7 +42,7 @@ export const TemplateCourseDetails: React.FC<TemplateCourseDetailsProps> = ({
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="flex items-center gap-3.5">
             <div className="w-12 h-12 rounded-2xl bg-amber-500/15 text-amber-500 flex items-center justify-center shrink-0 border border-amber-500/20">
-              <Truck className="w-6 h-6 text-amber-500" />
+              {renderCategoryIcon(currentCategory.iconName, "w-6 h-6 text-amber-500")}
             </div>
             <div>
               <div className="flex items-center gap-2">
@@ -59,11 +71,10 @@ export const TemplateCourseDetails: React.FC<TemplateCourseDetailsProps> = ({
           return (
             <div
               key={pkg.id}
-              className={`group bg-white rounded-2xl border transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-xs hover:shadow-xl hover:-translate-y-2 ${
-                isPopular
+              className={`group bg-white rounded-2xl border transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-xs hover:shadow-xl hover:-translate-y-2 ${isPopular
                   ? 'border-2 border-amber-500 ring-4 ring-amber-500/10'
                   : 'border-slate-200 hover:border-slate-300'
-              }`}
+                }`}
             >
               {/* Package Header Visual */}
               {pkg.image && (
@@ -138,11 +149,10 @@ export const TemplateCourseDetails: React.FC<TemplateCourseDetailsProps> = ({
                 <div className="space-y-2 pt-3">
                   <button
                     onClick={() => onOpenBooking(currentCategory.name, pkg.title)}
-                    className={`w-full py-2.5 px-4 rounded-xl text-xs transition-all active:scale-95 flex items-center justify-center gap-1.5 cursor-pointer ${
-                      isPopular
+                    className={`w-full py-2.5 px-4 rounded-xl text-xs transition-all active:scale-95 flex items-center justify-center gap-1.5 cursor-pointer ${isPopular
                         ? 'bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold shadow-md hover:shadow-amber-500/20'
                         : 'bg-slate-900 hover:bg-slate-800 text-white font-semibold hover:border-amber-500 shadow-sm'
-                    }`}
+                      }`}
                   >
                     <span>Enroll in Batch</span>
                     <ArrowRight className="w-3.5 h-3.5" />

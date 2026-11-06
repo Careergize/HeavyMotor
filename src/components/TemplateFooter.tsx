@@ -39,7 +39,7 @@ export const TemplateFooter: React.FC = () => {
             <h5 className="font-bold text-white text-xs uppercase tracking-wider">Kayamkulam Office</h5>
             <div className="space-y-1.5 text-xs text-slate-400">
               <p>Opposite MSM College Main Gate, NH-66 Junction, Kayamkulam, Kerala 690502</p>
-              <p className="text-white font-bold">Hotline: <span className="text-amber-400">+91 98765 43210</span></p>
+              <p className="text-white font-bold">Hotline: <span className="text-amber-400">+91 00000 00000</span></p>
               <p>Landline: 0479 - 000 0000</p>
             </div>
           </div>

@@ -53,7 +53,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
     const text = encodeURIComponent(
       `Hello Hans Driving School, I want to book training for:\n• Category: ${formData.category}\n• Name: ${formData.name}\n• Phone: ${formData.phone}\n• Batch: ${formData.batch}\n• License Status: ${formData.experience}\n• Notes: ${formData.notes}`
     );
-    return `https://wa.me/919876543210?text=${text}`;
+    return `https://wa.me/910000000000?text=${text}`;
   };
 
   return (
@@ -158,7 +158,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                 <input
                   type="tel"
                   required
-                  placeholder="+91 98765 43210"
+                  placeholder="+91 00000 00000"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm text-slate-900 bg-slate-50/50"

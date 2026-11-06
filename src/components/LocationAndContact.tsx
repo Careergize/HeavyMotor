@@ -68,10 +68,10 @@ export const LocationAndContact: React.FC = () => {
                   <div>
                     <p className="text-xs text-slate-500 font-semibold uppercase">Direct Hotlines</p>
                     <a
-                      href="tel:+919876543210"
+                      href="tel:+910000000000"
                       className="text-sm font-bold text-slate-900 hover:text-amber-600 transition-colors block"
                     >
-                      +91 98765 43210
+                      +91 00000 00000
                     </a>
                     <a
                       href="tel:+914790000000"
@@ -162,7 +162,7 @@ export const LocationAndContact: React.FC = () => {
                     </p>
                     <div className="pt-2">
                       <a
-                        href={`https://wa.me/919876543210?text=${encodeURIComponent(
+                        href={`https://wa.me/910000000000?text=${encodeURIComponent(
                           `Hi Hans Driving School, I submitted an inquiry for ${formData.vehicle} on your website. My name is ${formData.name}.`
                         )}`}
                         target="_blank"
@@ -198,7 +198,7 @@ export const LocationAndContact: React.FC = () => {
                         <input
                           type="tel"
                           required
-                          placeholder="+91 98765 43210"
+                          placeholder="+91 00000 00000"
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-sm text-slate-900 bg-slate-50/50"

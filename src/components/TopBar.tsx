@@ -29,10 +29,10 @@ export const TopBar: React.FC = () => {
               <Phone className="w-3.5 h-3.5 text-emerald-400" />
               <span>Hotline:</span>
               <a
-                href="tel:+919876543210"
+                href="tel:+910000000000"
                 className="hover:text-amber-400 transition-colors tracking-wide text-amber-300 font-bold"
               >
-                +91 98765 43210
+                +91 00000 00000
               </a>
             </div>
           </div>

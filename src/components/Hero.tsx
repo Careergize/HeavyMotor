@@ -51,11 +51,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             </button>
 
             <a
-              href="tel:+919876543210"
+              href="tel:+910000000000"
               className="w-full sm:w-auto px-7 py-4 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700 hover:border-slate-600 text-white font-bold text-base transition-all duration-200 flex items-center justify-center gap-2.5 shadow-md hover:-translate-y-0.5"
             >
               <Phone className="w-5 h-5 text-emerald-400" />
-              <span>Call Instructor: 98765 43210</span>
+              <span>Call Instructor: 00000 00000</span>
             </a>
           </div>
         </div>

@@ -11,7 +11,7 @@ export const MobileQuickBar: React.FC<MobileQuickBarProps> = ({ onOpenBooking })
       <div className="grid grid-cols-3 gap-2 max-w-md mx-auto">
         {/* Call Button */}
         <a
-          href="tel:+919876543210"
+          href="tel:+910000000000"
           className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-colors min-h-[48px] active:scale-95"
         >
           <Phone className="w-4 h-4 text-emerald-400 mb-0.5" />
@@ -20,7 +20,7 @@ export const MobileQuickBar: React.FC<MobileQuickBarProps> = ({ onOpenBooking })
 
         {/* WhatsApp Button */}
         <a
-          href="https://wa.me/919876543210?text=Hello%20Hans%20Driving%20School%2C%20I%20would%20like%20to%20enquire%20about%20heavy%20vehicle%20driving%20courses%20in%20Kayamkulam."
+          href="https://wa.me/910000000000?text=Hello%20Hans%20Driving%20School%2C%20I%20would%20like%20to%20enquire%20about%20heavy%20vehicle%20driving%20courses%20in%20Kayamkulam."
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-emerald-600/90 hover:bg-emerald-600 text-white transition-colors min-h-[48px] active:scale-95 shadow-sm"

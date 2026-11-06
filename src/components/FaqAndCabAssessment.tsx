@@ -73,7 +73,7 @@ export const FaqAndCabAssessment: React.FC = () => {
                 <p className="text-xs text-slate-500">Our RTO documentation officer is available on call.</p>
               </div>
               <a
-                href="tel:+919876543210"
+                href="tel:+910000000000"
                 className="shrink-0 px-4 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-amber-400 text-xs font-bold flex items-center gap-1.5 transition-colors"
               >
                 <PhoneCall className="w-3.5 h-3.5" />

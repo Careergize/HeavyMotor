@@ -73,11 +73,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             {/* Desktop Actions - Single clean CTA with spacious layout */}
             <div className="hidden md:flex items-center gap-4 shrink-0">
               <a
-                href="tel:+919876543210"
+                href="tel:+910000000000"
                 className="hidden xl:flex items-center gap-2 text-xs font-semibold text-slate-300 hover:text-white transition-colors py-2 px-3 rounded-lg hover:bg-slate-800/60"
               >
                 <Phone className="w-3.5 h-3.5 text-emerald-400" />
-                <span>+91 98765 43210</span>
+                <span>+91 00000 00000</span>
               </a>
 
               <button
@@ -171,15 +171,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             {/* Drawer Bottom Actions */}
             <div className="pt-5 border-t border-slate-800 space-y-2">
               <a
-                href="tel:+919876543210"
+                href="tel:+910000000000"
                 className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs uppercase tracking-wider border border-slate-700 transition-colors min-h-[44px]"
               >
                 <Phone className="w-4 h-4 text-emerald-400" />
-                <span>Call +91 98765 43210</span>
+                <span>Call +91 00000 00000</span>
               </a>
 
               <a
-                href="https://wa.me/919876543210?text=Hello%20Hans%20Driving%20School%2C%20I%20would%20like%20to%20enquire%20about%20heavy%20vehicle%20training."
+                href="https://wa.me/910000000000?text=Hello%20Hans%20Driving%20School%2C%20I%20would%20like%20to%20enquire%20about%20heavy%20vehicle%20training."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 font-bold text-xs uppercase tracking-wider transition-colors min-h-[44px]"

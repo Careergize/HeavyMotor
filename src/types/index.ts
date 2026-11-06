@@ -4,7 +4,8 @@ export type VehicleCategoryId =
   | 'jcb-earthmover'
   | 'car-lmv'
   | 'bike-autorickshaw'
-  | 'trailer-articulated';
+  | 'trailer-articulated'
+  | 'mvd-badge';
 
 export interface VehicleCategory {
   id: VehicleCategoryId;

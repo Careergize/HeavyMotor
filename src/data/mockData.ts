@@ -67,6 +67,17 @@ export const VEHICLE_CATEGORIES: VehicleCategory[] = [
     image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80',
     description: 'Advanced articulated reversing, jackknife prevention, kingpin coupling/uncoupling, and Gulf transport trade test coaching.',
   },
+  {
+    id: 'mvd-badge',
+    name: 'Kerala MVD Commercial Driver Badge',
+    shortName: 'MVD Badge (PSV)',
+    tagline: 'PSV endorsement, passenger transport & commercial badge clearance',
+    iconName: 'Award',
+    badge: 'MVD Badge Approved',
+    vehicleModel: 'Bus, Taxi & Commercial Goods Transport Fleet',
+    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=80',
+    description: 'Mandatory Kerala MVD PSV badge coaching covering passenger safety regulations, First Aid certification, and Sarathi endorsement clearance.',
+  },
 ];
 
 export const COURSE_PACKAGES: CoursePackage[] = [
@@ -519,6 +530,77 @@ export const COURSE_PACKAGES: CoursePackage[] = [
       'Post-arrival phone assistance from our alumni network across Dubai & Riyadh',
     ],
   },
+  // Kerala MVD Commercial Driver Badge (PSV)
+  {
+    id: 'badge-tier-1',
+    categoryId: 'mvd-badge',
+    tier: 'ground',
+    tierLabel: 'Tier 1: Badge Theory & First Aid',
+    title: 'MVD Badge Regulations & St. John First Aid',
+    subTitle: 'Mandatory passenger transport compliance and certified medical first-aid course.',
+    price: 3500,
+    originalPrice: 4500,
+    duration: '5 Days Theory & Lab',
+    hours: '12 Classroom & Practical Hours',
+    popular: false,
+    vehicleType: 'Transport Fleet & Seminar Room',
+    suitableFor: 'LMV/HGV drivers requiring commercial PSV badge endorsement',
+    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80',
+    features: [
+      'St. John Ambulance Kerala First Aid Certification assistance',
+      'Kerala Motor Vehicles Rules (KMVR) passenger transport syllabus',
+      'Public relations, passenger etiquette & fare meter regulations',
+      'Sarathi portal badge application document clearance',
+      'Official KL-29 RTO badge exam preparation notes',
+    ],
+  },
+  {
+    id: 'badge-tier-2',
+    categoryId: 'mvd-badge',
+    tier: 'road',
+    tierLabel: 'Tier 2: Practical Passenger Driving',
+    title: 'Commercial Passenger Route & Defensive Driving',
+    subTitle: 'Hands-on passenger bus and commercial taxi route handling with dual controls.',
+    price: 6500,
+    originalPrice: 8000,
+    duration: '10 Days Intensive',
+    hours: '18 On-Road Hours',
+    popular: true,
+    vehicleType: 'Tata Starbus 44-Seater & Swift Taxi',
+    suitableFor: 'Commercial drivers preparing for public transport badge endorsement',
+    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80',
+    features: [
+      'Dual-control passenger bus/cab route handling in Kayamkulam town',
+      'Bus-bay halting, commuter boarding safety & mirror blind-spot drills',
+      'Emergency braking, rain handling & night passenger driving',
+      'Mock MVD inspector oral and practical badge evaluation',
+      'Certificate of defensive commercial passenger navigation',
+    ],
+  },
+  {
+    id: 'badge-tier-3',
+    categoryId: 'mvd-badge',
+    tier: 'complete',
+    tierLabel: 'Tier 3: Complete Badge Clearance Package',
+    title: 'Complete MVD Badge + Kerala Sarathi Clearance',
+    subTitle: 'Full-service badge training, First Aid exam, and RTO test day accompaniment.',
+    price: 9500,
+    originalPrice: 12000,
+    duration: '15 Days Full Program',
+    hours: '30 Comprehensive Hours',
+    popular: false,
+    vehicleType: 'All Transport Categories',
+    suitableFor: 'Career drivers seeking immediate commercial driving employment in Kerala',
+    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80',
+    features: [
+      'End-to-end Sarathi badge verification and police clearance guidance',
+      'Complete First Aid test fee & authorized certificate processing',
+      'Sub-RT Office Kayamkulam (KL-29) test day accompaniment',
+      'Hans Driving School Certificate of Professional Competence',
+      'Job placement assistance with KSRTC SWIFT, school & tour operators',
+      'Complimentary commercial driver legal refresher handbook',
+    ],
+  },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
@@ -620,3 +702,11 @@ export const FAQS: FaqItem[] = [
       'You only need to bring: 1) Original LMV Driving License + 2 copies, 2) Aadhaar Card + copy, 3) SSLC or 10th standard certificate (proof of date of birth), 4) 4 passport-size photographs, and 5) Blood group report. Our office team takes care of all online Sarathi portal filings and Form 1A medical appointments.',
   },
 ];
+
+export const CONTACT_INFO = {
+  phoneDisplay: '+91 00000 00000',
+  phoneDial: '+910000000000',
+  landline: '0479 - 000 0000',
+  whatsAppNumber: '910000000000',
+  address: 'Opposite MSM College Main Gate, NH-66 Junction, Kayamkulam, Kerala 690502',
+};

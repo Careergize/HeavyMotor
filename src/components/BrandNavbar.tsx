@@ -77,21 +77,21 @@ export const BrandNavbar: React.FC<BrandNavbarProps> = ({ onOpenBooking }) => {
             <div className="hidden md:flex items-center gap-3 shrink-0">
               {/* Compact Call Icon on Medium/Laptop Screens */}
               <a
-                href="tel:+919876543210"
+                href="tel:+910000000000"
                 className="w-9 h-9 rounded-full bg-white hover:bg-amber-50 border border-slate-200 hover:border-amber-500 text-slate-700 hover:text-amber-600 flex items-center justify-center transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xs group xl:hidden"
-                title="Call +91 98765 43210"
+                title="Call +91 00000 00000"
               >
                 <Phone className="w-4 h-4 text-amber-500 group-hover:scale-110 transition-transform" />
               </a>
 
               {/* Full Call Link on Extra Large Desktops */}
               <a
-                href="tel:+919876543210"
+                href="tel:+910000000000"
                 className="hidden xl:flex items-center gap-2 px-3.5 py-2 rounded-full bg-white hover:bg-amber-50/50 border border-slate-200 hover:border-amber-400 text-slate-800 hover:text-amber-600 text-xs font-bold transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xs"
               >
                 <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
                 <Phone className="w-3.5 h-3.5 text-amber-500" />
-                <span>+91 98765 43210</span>
+                <span>+91 00000 00000</span>
               </a>
 
               {/* Primary "Book Training" button with hover elevation */}
@@ -107,7 +107,7 @@ export const BrandNavbar: React.FC<BrandNavbarProps> = ({ onOpenBooking }) => {
             {/* Mobile Actions */}
             <div className="flex items-center gap-2 md:hidden">
               <a
-                href="tel:+919876543210"
+                href="tel:+910000000000"
                 className="w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-amber-500"
                 title="Call Driving School"
               >
@@ -193,15 +193,15 @@ export const BrandNavbar: React.FC<BrandNavbarProps> = ({ onOpenBooking }) => {
             {/* Drawer Bottom Actions */}
             <div className="pt-5 border-t border-slate-100 space-y-2">
               <a
-                href="tel:+919876543210"
+                href="tel:+910000000000"
                 className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-xs"
               >
                 <Phone className="w-4 h-4 text-amber-400" />
-                <span>Call +91 98765 43210</span>
+                <span>Call +91 00000 00000</span>
               </a>
 
               <a
-                href="https://wa.me/919876543210?text=Hello%20Hans%20Driving%20School%2C%20I%20would%20like%20to%20enquire%20about%20heavy%20vehicle%20training."
+                href="https://wa.me/910000000000?text=Hello%20Hans%20Driving%20School%2C%20I%20would%20like%20to%20enquire%20about%20heavy%20vehicle%20training."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl border border-slate-300 text-slate-800 hover:bg-slate-100 hover:border-amber-500 font-bold text-xs transition-colors"
